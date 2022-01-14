@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/");
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+section {
+  margin: 1em 0;
+  padding: 2em 0;
+}
+
+.item {
+  display: inline-block;
+  width: 23%;
+}
+
+.items {
+  max-width: 1000px;
+  margin: 0 auto;
+}
