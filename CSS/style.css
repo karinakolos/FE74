@@ -69,3 +69,18 @@ section {
 .first {
   border-left: 1px solid #fff;
 }
+.logos {
+  background-color: #f8f8f8;
+}
+.sixlogos {
+  display: inline-block;
+  width: 16%;
+  text-align: center;
+  padding: 3rem 0;
+}
+.logos .container {
+  text-align: center;
+}
+.image {
+  max-width: 3.5rem;
+}
