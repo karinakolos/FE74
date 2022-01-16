@@ -1,6 +1,31 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/");
+  src: url("../fonts/Montserrat-Bold.woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kaushan Script";
+  src: url("../fonts/KaushanScript-Regular.woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Bold.woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Black.woff2");
+  font-weight: 900;
   font-display: swap;
 }
 * {
@@ -15,15 +40,32 @@
 }
 section {
   margin: 1em 0;
-  padding: 2em 0;
-}
-
-.item {
-  display: inline-block;
-  width: 23%;
 }
 
 .items {
-  max-width: 1000px;
-  margin: 0 auto;
+  display: inline-block;
+  width: 19.5%;
+  text-align: center;
+  border-right: 1px solid #fff;
+  padding: 3rem 0;
+}
+
+.number {
+  background-color: #95e1d3;
+}
+.character {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.ipsum {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.first {
+  border-left: 1px solid #fff;
 }
