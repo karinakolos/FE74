@@ -28,6 +28,28 @@
   font-weight: 900;
   font-display: swap;
 }
+body {
+  font-family: Raleway;
+}
+h1 {
+  font-family: Montserrat;
+  font-weight: 700;
+}
+h2 {
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  font-style: italic;
+}
+h3,
+h6 {
+  ]font-weight: 700;
+}
+h4 {
+  font-weight: 900;
+}
+h5 {
+  font-weight: 400;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -83,4 +105,65 @@ section {
 }
 .image {
   max-width: 3.5rem;
+}
+.latestblog {
+  background: url("../images/bg.png");
+}
+.imglocation {
+  text-align: center;
+  max-width: 1.5rem;
+  padding-top: 2.5rem;
+}
+.latestblog .container {
+  text-align: center;
+}
+.textblog {
+  color: #f38281;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2.7rem;
+  padding-bottom: 1rem;
+}
+.textblog::after {
+  content: "";
+  background: #f38281;
+  height: 2.5px;
+  margin: 1rem auto;
+  display: block;
+  width: 11%;
+}
+.storyaboutus {
+  text-align: center;
+}
+.subject {
+  line-height: 2.7rem;
+  padding-bottom: 1rem;
+}
+.storyaboutus .text {
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
+.storyaboutus .text::after {
+  display: block;
+  content: "";
+  background: #f38281;
+  height: 3px;
+  margin: 1.5rem auto;
+  width: 11%;
+}
+.storyaboutus .block {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  padding-bottom: 5.5rem;
+}
+.picture {
+  display: inline-block;
+  width: 32%;
+  padding-bottom: 6.5rem;
+}
+.picture img {
+  width: 100%;
+}
+.secondpicture {
+  margin: 0 1rem 0 1rem;
 }
