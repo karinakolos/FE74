@@ -107,6 +107,18 @@ section {
   left: 50%;
   transform: translate(-50%, 0);
 }
+.welcome button:hover {
+  background: #fff;
+  color: #e4be8d;
+  transition: all 0.3s ease;
+}
+.welcome button:focus {
+  background: #fff;
+  color: #e4be8d;
+  transition: all 0.3s ease;
+  border: 1px solid #e4be8d;
+}
+
 .line {
   display: flex;
   justify-content: space-between;
@@ -299,9 +311,11 @@ header ul {
   list-style-type: none;
 }
 header li {
-  margin: 0 1.8rem;
+  margin: 0 0.9rem;
+  padding: 0 0.9rem;
   align-items: center;
   display: flex;
+  position: relative;
 }
 header li:last-child {
   margin-left: 0.5rem;
@@ -314,18 +328,23 @@ header li:last-child {
   color: #fff;
   font-size: 14px;
 }
-.nav li::after {
+.nav a:hover {
+  color: #f4bf87;
+  transition: all 0.2s ease;
+}
+.nav a::after {
   content: "";
   display: block;
   background: #f4bf87;
   height: 1px;
-  width: 50%;
+  width: 104%;
   position: absolute;
-  bottom: -0.1rem;
+  bottom: -0.2rem;
   opacity: 0;
-  transition: all 0.2s ease;
+
+  left: 0rem;
 }
-.nav li:hover::after {
+.nav a:hover::after {
   opacity: 1;
   transition: all 0.2s ease;
 }
