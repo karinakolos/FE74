@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>title</title>
+    <link rel="stylesheet" href="./CSS/form.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__logo">
+        <img src="./images/logo-form.svg" alt="" />
+      </div>
+      <form class="wrapper__form">
+        <div class="form__title">
+          <h2>Welcome</h2>
+          <p>Please login to your account</p>
+        </div>
+        <div class="form__content">
+          <div class="form-item">
+            <label for="form-email">
+              <input id="form-email" type="email" placeholder="Email Address" />
+            </label>
+            <button><img src="./images/Icon feather-mail.svg" alt="" /></button>
+          </div>
+
+          <div class="form-item">
+            <label for="form-password">
+              <input
+                id="form-password"
+                type="password"
+                placeholder="Password"
+              />
+            </label>
+            <button><img src="./images/Icon feather-eye.svg" alt="" /></button>
+          </div>
+          <button class="form-btn">Login</button>
+          <a href="/forgot-password">Forgot password?</a>
+        </div>
+        <div class="form__buttons">
+          <button class="form-btn form-btn--blue">
+            <img src="./images/Group 13.svg" alt="" />
+          </button>
+          <button class="form-btn form-btn--orange">Login as guest</button>
+          <p>
+            Don’t have an account?
+            <a href=""> Register now</a>
+          </p>
+        </div>
+      </form>
+      <div class="wrapper__footer">
+        <p>
+          By signing up, you are agree with our
+          <a href="/"> Terms & Conditions</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

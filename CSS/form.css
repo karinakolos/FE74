@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1000px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  max-width: 375px;
+  max-height: 100vh;
+  padding: 45px 38px 30px;
+  border: 1px solid #eee;
+  font-family: Roboto;
+  color: #1a1a1a;
+}
+.wrapper .form-btn {
+  padding: 16px;
+  border: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  cursor: pointer;
+}
+.wrapper .form-btn--blue {
+  background-color: #3b5998;
+}
+.wrapper .form-btn--orange {
+  background-color: #fd8c00;
+}
+.wrapper a {
+  color: #e70b89;
+}
+.wrapper__logo {
+  text-align: center;
+  margin-bottom: 95px;
+}
+.wrapper__form {
+  margin-bottom: 65px;
+}
+.form__title {
+  margin-bottom: 40px;
+}
+
+.form__title h2 {
+  margin-bottom: 5px;
+
+  font-size: 49px;
+  line-height: 57px;
+}
+
+.form__title p {
+  font-size: 14px;
+  line-height: 16px;
+}
+.form-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+.form-item:last-of-type {
+  margin-bottom: 18px;
+}
+.form-item input {
+  padding: 14px 24px 16px;
+  border: 1px solid currentColor;
+  width: 100%;
+}
+.form-item input::placeholder {
+  color: rgba(26, 26, 26, 0.56);
+}
+.form-item button {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+}
+.form__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+.form__content > button {
+  margin-bottom: 16px;
+  padding: 16px;
+  background: #e70b89;
+  border: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.form__content > a {
+  align-self: flex-end;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+}
+.form__buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form__buttons > * {
+  flex: 1;
+}
+.form__buttons button:not(:last-of-type) {
+  margin-right: 20px;
+}
+.form__buttons button {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 25px;
+}
+.form__buttons > p {
+  flex-basis: 100%;
+  text-align: center;
+}
+.wrapper__footer {
+  font-size: 12px;
+  line-height: 14px;
+}
