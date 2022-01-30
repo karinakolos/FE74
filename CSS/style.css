@@ -498,6 +498,7 @@ header button {
   margin-left: 1.8rem;
 }
 .service__column-50__row {
+  position: relative;
   display: flex;
   flex-direction: row;
   border: 1px solid #c6cbcd;
@@ -529,4 +530,62 @@ header button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.service__column-50__row__bottom {
+  position: absolute;
+  bottom: 0rem;
+  left: 32rem;
+  border: none;
+  background: #0000;
+}
+.service__column-50__row__bottom img {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+.service__column-50__row__bottom_rotate {
+  transform: rotate(180deg);
+}
+.quote {
+  background-color: #f8f8f8;
+}
+.quote__item {
+  display: flex;
+  flex-direction: row;
+  margin: 2.5rem 2rem;
+}
+.quote button {
+  border: none;
+  background: #0000;
+}
+.quote__item__button__img-left {
+  transform: rotate(270deg);
+}
+.quote__item__button__img-right {
+  transform: rotate(90deg);
+}
+.quote .container {
+  display: flex;
+}
+.quote__item__text p {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #a9afb1;
+  margin: auto 1rem 1.75rem 1.5rem;
+}
+.quote__item__text h2 {
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 2.75rem;
+  padding-left: 1.5rem;
+}
+.quote__item__text h2::before {
+  content: "";
+  display: inline-block;
+  background: #f38281;
+  height: 4px;
+  width: 4.4rem;
+  margin-right: 3.5rem;
 }
