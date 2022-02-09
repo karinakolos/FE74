@@ -353,32 +353,7 @@ header button {
   transition: all 0.3s ease-in;
 }
 
-.latestblog {
-  background: url("../images/bg.png");
-}
-.imglocation {
-  text-align: center;
-  max-width: 1.5rem;
-  padding-top: 2.5rem;
-}
-.latestblog .container {
-  text-align: center;
-}
-.textblog {
-  color: #f38281;
-  font-size: 1.8rem;
-  text-align: center;
-  line-height: 2.7rem;
-  padding-bottom: 1rem;
-}
-.textblog::after {
-  content: "";
-  background: #f38281;
-  height: 3px;
-  margin: 1rem auto;
-  display: block;
-  width: 11%;
-}
+
 .storyaboutus {
   text-align: center;
   margin-top: 3.5rem;
@@ -466,6 +441,10 @@ header button {
     top: -0.6rem;
     left: -0.5rem;
   }
+  .storyaboutus .text {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
 }
 
 @media (max-width: 768px) {
@@ -561,7 +540,13 @@ header button {
     margin-bottom: 4.25rem;
   }
   .amazing-services h4 {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+  }
+  .amazing-services h2 {
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -617,12 +602,19 @@ header button {
   position: relative;
   padding-bottom: 3.6rem;
 }
+@media (max-width: 1024px) {
+  .design h4 {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+  }
+}
 @media (max-width: 768px) {
   .design__device__phone img {
     top: 50%;
     left: 50%;
     transform: translate(0%, -10%);
   }
+  
 }
 .service h2 {
   font-style: normal;
@@ -1009,6 +1001,28 @@ header button {
   max-width: 23rem;
 }
 @media (max-width: 1024px) {
+  .clients__main__element {
+    display: flex;
+    flex: 1;
+    flex-basis: 50%;
+  }
+  .clients__main__element__info h6 {
+    font-size: 1.1rem;
+    padding: 1rem 0 0;
+  }
+  .clients__main__element img {
+    width: 166px;
+  }
+  .clients__main__element__info span {
+    font-size: 0.88rem;
+  }
+  .clients__main__element__info span::after {   
+    margin: 1rem auto 1rem 0;
+}
+.clients__main__element__info p {
+    font-size: 0.88rem;
+    padding-bottom: 4rem;
+}
 }
 
 @media (max-width: 768px) {
@@ -1060,9 +1074,67 @@ header button {
   padding-right: 2rem;
 }
 @media (max-width: 1024px) {
+  .stories__element__img {
+    width: 316px;
 }
-
+.stories__element__img img {
+  width: 100%;
+}
+.stories__element__img .data {
+  width: 67px;
+}
+.stories__element__h6 {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+}
+.stories__element__p {
+    font-size: 0.88rem;
+}
+.stories__element__info {
+    gap: 0.5rem;
+}
+.stories {
+   
+    margin-bottom: 4rem;
+}
+}
 @media (max-width: 768px) {
+}
+.latestblog {
+  background: url("../images/bg.png");
+}
+.imglocation {
+  text-align: center;
+  max-width: 1.5rem;
+  padding-top: 2.5rem;
+}
+.latestblog .container {
+  text-align: center;
+}
+.textblog {
+  color: #f38281;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2.7rem;
+  padding-bottom: 1rem;
+}
+.textblog::after {
+  content: "";
+  background: #f38281;
+  height: 3px;
+  margin: 1rem auto;
+  display: block;
+  width: 11%;
+}
+@media (max-width: 1024px) {
+  .textblog {
+    
+    font-size: 1.5rem;
+    
+    line-height: 2.2rem;
+
+}
 }
 
 .footer__row {
@@ -1237,6 +1309,69 @@ header button {
   margin: 1rem 0;
 }
 @media (max-width: 1024px) {
+  .footer__row {
+    gap: 1.5rem;
+}
+.footer__row__column-33 h3 {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+  .footer__row__column-33 {
+    flex-basis: 33%;
+  }
+  .footer__row__column-33__text {
+    font-size: 0.88rem;
+    line-height: 1.1rem;
+  }
+  .footer__row__column-33__followers p {
+    font-size: 0.88rem;
+}
+.footer__row__column-33__followers span {
+    font-size: 1.5rem;
+}
+.footer__row__column-33__items__picture {
+    width: 115px;
+    height: 71px;
+}
+.footer__row__column-33__items__text h6 {
+    font-size: 0.88rem;
+    line-height: 1.1rem;
+}
+.footer__row__column-33__items__text span {
+    font-size: 0.75rem;
+    margin-top: 0.8rem;
+   
+}
+.footer__row__column-33__form input {
+      padding: 0.6rem ;
+    font-size: 0.88rem;
+}
+.footer__row__column-33__form button {
+    text-align: center;
+    padding: 0.6rem 1.4rem;
+    font-size: 0.88rem;
+    line-height: 1rem;
+}
+.footer__column-33__link {
+    font-size: 0.75rem;
+    padding-top: 1.6rem;
+}
+.footer__row__column-33__img {
+  width: 185px;
+}
+.footer__row__column-33__img img{
+  width: 100%;
+}
+.footer__row__column-33 h3 {
+    margin: 1.9rem 0 1.3rem;
+}
+.footer__row__column-33__social__elements {
+    gap: 0.3rem;
+}
+.footer__row__column-33__elements__element {
+    width: 78px;
+    height: 76px;
+}
 }
 
 @media (max-width: 768px) {
