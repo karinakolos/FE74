@@ -451,6 +451,7 @@ header button {
       "g c"
       "d b"
       "f f";
+    grid-template-columns: 1fr 1fr;
   }
   .works .element:nth-child(1) {
     grid-area: a;
@@ -589,6 +590,7 @@ header button {
   }
   .all__picture {
     flex-direction: column;
+    gap: 1rem;
   }
   .picture__hover {
     top: auto;
@@ -894,6 +896,7 @@ header button {
 .service__column-50__row {
   position: relative;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   border: 1px solid #c6cbcd;
 }
@@ -927,7 +930,6 @@ header button {
 }
 
 .service__column-50__row__bottom {
-  position: absolute;
   bottom: 0rem;
   left: 32rem;
   border: none;
@@ -1378,6 +1380,7 @@ header button {
 @media (max-width: 768px) {
   .clients__main__element {
     flex-direction: column;
+    flex-basis: 100%;
   }
   .clients__main__element__img {
     display: flex;
@@ -1821,8 +1824,8 @@ header button {
     margin-top: 0.2rem;
   }
   .footer__row__column-33__elements__element {
-    width: 96px;
-    height: 94.3px;
+    width: 33%;
+    height: auto;
   }
   .footer__row__column-33__elements__element img {
     width: 100%;
