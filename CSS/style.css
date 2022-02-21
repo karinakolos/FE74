@@ -1391,6 +1391,7 @@ header button {
   }
   .clients__main__element__info {
     align-items: center;
+    margin: 0 auto;
   }
   .clients__main__element__info span::after {
     width: 7.3rem;
